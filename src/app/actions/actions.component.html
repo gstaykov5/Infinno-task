@@ -1,0 +1,17 @@
+<div>Write number between 1 and 100</div>
+<input #number type="text" class="form-control-sm" placeholder="1 - 100">
+<button (click)='templateRef(number.value)' class="btn-sm btn-info mr-2">Click to calculate</button>
+<div>The numbers whose sum of eigenvalues equals eleven are: 
+    <ng-container *ngFor="let number of numbers">
+        {{number}}
+    </ng-container>
+</div>
+<br>
+
+<button (click)='httpReq()' class="btn-sm btn-info mr-2">Click to calculate</button>
+<div>The numbers whose sum of eigenvalues equals eleven are: 
+    <ng-container *ngFor="let number of subscribedNumbers">
+        {{number}}
+    </ng-container>
+</div>
+
